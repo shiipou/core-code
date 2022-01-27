@@ -30,7 +30,7 @@ jobs:
           RELEASE_NOTES="${RELEASE_NOTES/    /}"
           echo "::set-output name=release-notes::${RELEASE_NOTES}"
       - name: create_pr
-        uses: lenra-io/create-or-update-pr-action/utils/trigger_workflow@v1
+        uses: lenra-io/create-or-update-pr-action/utils/trigger_workflow@beta
         with:
           target_ref: ${{ steps.extract_tag.outputs.target_ref }}
           target_repository: "${{ github.repository_owner }}/my-dev-app"
