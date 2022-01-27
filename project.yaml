@@ -1,0 +1,4 @@
+name: 'my-core-code'
+
+dependencies:
+  my-library: v1.0.0-beta.1
